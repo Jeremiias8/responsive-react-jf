@@ -45,12 +45,34 @@ export const Intro = () => {
             <img src={Vector1} alt="" />
             <img src={Vector2} alt="" />
             <img src={boy} alt="" />
+            <img src={glassesemoji} alt="" />
 
-            <div>
+            <div style={{ top: '-18%', left: '-68%' }} >
                 <FloatingDiv image={Crown}
                     txt1='Web'
                     txt2='Developer' 
                 />
+            </div>
+            <div style={{ top: '18rem', left: '0rem' }}>
+                <FloatingDiv image={thumbup} 
+                    txt1='Best Design' 
+                    txt2='Award' 
+                />
+            </div>
+
+            {/* blur divs */}
+            <div className="blur" 
+                style={{ background: 'rgb(238 210 255)' }}
+            >   
+            </div>
+            <div className="blur"
+                style={{ background: '#C1F5FF', 
+                    top: '17rem', 
+                    width: '21rem', 
+                    height: '11rem',
+                    left: '-9rem'
+                }}
+            >
             </div>
 
         </div>

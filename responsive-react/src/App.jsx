@@ -2,6 +2,7 @@
 import './App.css'
 import { Navbar } from './components/Navbar/Navbar'
 import { Intro } from './components/Intro/Intro'
+import { Services } from './components/Services/Services'
 
 function App() {
   
@@ -13,6 +14,10 @@ function App() {
         </nav>
 
         <Intro />
+
+        <section>
+          <Services />
+        </section>
 
        
       </div>

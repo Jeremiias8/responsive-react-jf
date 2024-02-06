@@ -97,3 +97,36 @@
     -o-transform: scale(1.4);
     left: 28%;
 }
+
+.i-right > :nth-child(4) {
+    transform: scale(0.2);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 0;
+}
+
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #760ab9;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+    -webkit-filter: blur(72px);
+}
