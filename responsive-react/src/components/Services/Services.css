@@ -30,3 +30,28 @@
     font-size: 14px;
     margin-top: 1rem;
 }
+
+.s-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.cards {
+    position: relative;
+}
+
+.cards > * {
+    position: absolute;
+}
+
+/* blur */
+.s-blur1 {
+    left: 14rem;
+    top: 8rem;
+}   
+
+.s-blur2 {
+    top: 13rem;
+    left: -18rem;
+}
