@@ -1,7 +1,7 @@
 import React from 'react'
 import './Testimonials.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+// import { Pagination } from 'swiper';
 import 'swiper/css/pagination';
 import 'swiper/css';
 
@@ -57,16 +57,21 @@ export const Testimonials = () => {
 
         {/* slider */}
         <Swiper
-            modules={[Pagination]}
             slidesPerView={1}
             pagination={{ clickable: true }}
+            className='swiper'
         >
 
             {clients.map((client, index) => {
                 return (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index}
+                        className='swiper-slide'
+                    >
                         <div className="testimonials">
+                            <h3>Client Img:</h3>
                             <img src={client.img} alt="" />
+
+                            <h4>Client Review:</h4>
                             <span>{client.review}</span>
                         </div>
                     </SwiperSlide>

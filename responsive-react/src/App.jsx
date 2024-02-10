@@ -7,6 +7,7 @@ import { Experience } from './components/Experience/Experience'
 import { Works } from './components/Works/Works'
 import { Portfolio } from './components/Portfolio/Portfolio'
 import { Testimonials } from './components/Testimonials/Testimonials'
+import { Contact } from './components/Contact/Contact'
 
 function App() {
   
@@ -38,6 +39,10 @@ function App() {
         <section>
           <Testimonials />
         </section>
+
+        <div>
+          <Contact />
+        </div>
        
       </div>
 
