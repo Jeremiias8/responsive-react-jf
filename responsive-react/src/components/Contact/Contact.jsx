@@ -1,7 +1,28 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Contact.css'
 
+import emailjs from 'emailjs';
+
 export const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_3uq8uvd', 'template_l4cpxqj', form.current, 'YOUR_USER_ID')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        if (window.confirm("Your message has been sent!")) {
+
+            const form = document.getElementById("contact-form");
+            form.reset();
+        }
+    }
 
   return (
     <div className="contact-form">
@@ -11,7 +32,7 @@ export const Contact = () => {
                 <span>Get in touch</span>
                 <span>Contact me</span>
 
-                <div className="blur s-blur"
+                <div className="blur s-blur1"
                     style={{ background: "#ABF1FF94" }}
                 ></div>
             </div>

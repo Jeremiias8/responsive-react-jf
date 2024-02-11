@@ -68,10 +68,7 @@ export const Testimonials = () => {
                         className='swiper-slide'
                     >
                         <div className="testimonials">
-                            <h3>Client Img:</h3>
                             <img src={client.img} alt="" />
-
-                            <h4>Client Review:</h4>
                             <span>{client.review}</span>
                         </div>
                     </SwiperSlide>
