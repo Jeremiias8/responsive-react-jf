@@ -8,12 +8,24 @@ import { Works } from './components/Works/Works'
 import { Portfolio } from './components/Portfolio/Portfolio'
 import { Testimonials } from './components/Testimonials/Testimonials'
 import { Contact } from './components/Contact/Contact'
+import { Footer } from './components/Footer/Footer'
+
+import { themeContext } from './Context'
+import { useContext } from 'react'
 
 function App() {
   
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <>
-      <div>
+      <div className='App'
+        style={{
+          background: darkMode ? 'black' : 'white',
+          color: darkMode ? 'white' : ''
+        }}
+      >
         <nav>
           <Navbar />
         </nav>
@@ -50,6 +62,10 @@ function App() {
       <div>
         <p>Im here with new settings.</p>
       </div>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 
