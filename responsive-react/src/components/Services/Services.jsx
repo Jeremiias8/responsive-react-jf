@@ -8,14 +8,25 @@ import HeartEmoji  from '../../img/heartemoji.png';
 import Glasses from '../../img/glasses.png';
 import Humbre from '../../img/humble.png';
 
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
+
+import { motion } from 'framer-motion';
+
 export const Services = () => {
+
+    const transition = {duration: 1, type: 'spring'};
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
 
   return (
     <div className="services">
 
         {/* left side */}
         <div className="awesome">
-            <span>My Awesome</span>
+            <span style={{ color: darkMode ? 'white' : '' }}>
+                My Awesome
+            </span>
             <span>services</span>
 
             <span>
@@ -39,13 +50,18 @@ export const Services = () => {
         {/* right side */}
         <div className="cards">
             
-            <div style={{ left: '14rem' }}>
-                <Card
-                    emoji={HeartEmoji}
-                    heading={'Design'}
-                    detail={"Figma, Sketch, Photoshop, Adobe, Adobe xd"}
-                />
-            </div>
+            <motion.div 
+                whileInView={{ left: '14rem' }}
+                initial={{ left: '25%' }}
+                transition={transition}
+
+                style={{ left: '14rem' }}>
+                    <Card
+                        emoji={HeartEmoji}
+                        heading={'Design'}
+                        detail={"Figma, Sketch, Photoshop, Adobe, Adobe xd"}
+                    />
+            </motion.div>
             <div style={{ top: '16rem', left: '7rem' }}>
                 <Card
                     emoji={Glasses}
