@@ -20,7 +20,7 @@ export const Services = () => {
     const darkMode = theme.state.darkMode;
 
   return (
-    <div className="services">
+    <div className="services" id="Services">
 
         {/* left side */}
         <div className="awesome">
@@ -62,7 +62,8 @@ export const Services = () => {
                         detail={"Figma, Sketch, Photoshop, Adobe, Adobe xd"}
                     />
             </motion.div>
-            <div style={{ top: '16rem', left: '7rem' }}>
+            <div style={{ top: '16rem', left: 
+            '10rem' }}>
                 <Card
                     emoji={Glasses}
                     heading={'Developer'}

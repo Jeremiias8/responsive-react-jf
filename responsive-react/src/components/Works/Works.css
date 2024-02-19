@@ -108,3 +108,33 @@
     left: 18rem;
     top: 8rem;
 }
+
+@media screen and (max-width: 480px) {
+
+    .works {
+        flex-direction: column;
+        height: 55rem;
+        padding: 0;
+        gap: 5rem;
+    }
+
+    .w-right {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        transform: scale(0.7);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+
+    .w-mainCircle {
+        position: static;
+    }
+    
+    .w-backCircle {
+        left: 8rem !important;
+    }
+
+}

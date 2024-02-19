@@ -66,7 +66,9 @@ export const Intro = () => {
                 whileInView={{ left: '68%' }}
                 transition={transition}
 
-                style={{ top: '-18%', left: '-88%' }} >
+                style={{ top: '-18%', left: '-88%' }} 
+                className='floating-div'
+                >
                     <FloatingDiv image={Crown}
                         txt1='Web'
                         txt2='Developer' 
@@ -78,7 +80,9 @@ export const Intro = () => {
                 whileInView={{ left: '0rem' }}
                 transition={transition}
 
-                style={{ top: '18rem', left: '0rem' }}>
+                style={{ top: '18rem', left: '0rem' }}
+                className='floating-div'
+                >
                     <FloatingDiv image={thumbup} 
                         txt1='Best Design' 
                         txt2='Award' 
