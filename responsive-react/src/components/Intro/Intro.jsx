@@ -62,8 +62,8 @@ export const Intro = () => {
             src={glassesemoji} alt="" />
 
             <motion.div 
-                initial={{ top: '-4%', left: '64%' }}
-                whileInView={{ left: '68%' }}
+                initial={{ top: '-4%', left: '59%' }}
+                whileInView={{ left: '63%' }}
                 transition={transition}
 
                 style={{ top: '-18%', left: '-88%' }} 

@@ -58,11 +58,6 @@ function App() {
        
       </div>
 
-      <h1>Responsive React</h1>
-      <div>
-        <p>Im here with new settings.</p>
-      </div>
-
       <footer>
         <Footer />
       </footer>
